@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Amigo Secreto</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1></h1>
+            <p></p>
+            <form>
+                <label for="entrada" class="entrada">
+                    <input type="text" name="entrada" id="entrada"> <span onclick="atraparEntrada()" form="entrada"><ion-icon name="add-circle-outline"></ion-icon></span>
+                </label>
+                <span class="button" onclick="elegirAmigoSecreto()"></span>
+            </form>
+            
+            <div class="lista" id="lista">
+                  
+            </div>
+            <div class="resultado">
+                
+            </div>
+            <div onclick="reiniciar()" class="reiniciar">
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

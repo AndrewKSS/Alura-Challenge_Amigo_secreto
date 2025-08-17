@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: url(assets/fondo.png);
+    background-position: center;
+    background-size: cover;
+    background-color: #0d1117;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    backdrop-filter: blur(1.5px);
+    padding: 15px 45px;
+}
+body::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: linear-gradient(180deg , #0d111777,#0d1117);
+}
+.container{
+    padding: 25px 25px;
+    z-index: 2;
+    height: auto;
+    display:flex;
+    width: 600px;
+    box-shadow: inset 10px 10px 10px #404142b6,
+    inset -10px -10px 10px #0b0b0cd0,
+    0px 0px 10px #111111d0;
+    background-color: #2a313c27;
+    backdrop-filter: blur(10px);
+    border: 1.5px solid #5f5f5f;
+    border-radius: 8px;
+}
+.form{
+    width: 100%;
+}
+.form h1{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 900;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+.form p{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+.form .entrada{
+    margin-top: 25px;
+    height: 35px;
+    width: 100%;
+    display: flex;
+    
+}
+.form #entrada{
+    padding: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+    border-radius: 3px 0px 0px 3px;
+    border: 1.5px solid #5f5f5f;
+}
+.form span{
+    border: 1.5px solid #5f5f5f;
+    cursor: pointer;
+    width: 40px;
+    font-size: 25px;
+    color: #fff;
+    background-color: #727272;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 3px 3px 0px;
+    
+}
+.form span:hover{
+    background:#0f0f0f ;
+    transition: 1s;
+}
+
+.form .lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f3db07d0;
+}
+.form .resultado{
+    margin-top: 20px;
+    display:flex;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    color: #5ef307d0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form .button{
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    background:linear-gradient(#222222,#050505);
+    color: #fff;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    border: 1.5px solid #5f5f5f;
+}
+.form .button:hover{
+    background:linear-gradient(#4e4e4e,#c2c2c2);
+    color: #0c0c0c;
+    transition: 1s;
+}
+.amigosecreto{
+    text-transform: uppercase;
+}
+.reiniciar{
+    margin-top: 20px;
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.reiniciar:hover{
+    color: #1aff00c9;
+}
