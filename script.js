@@ -78,7 +78,8 @@ function elegirAmigoSecreto(){
     if (verificarListaVacia(lista)){
         rellenarTexto(".lista","")
         rellenarTexto(".reiniciar","Reiniciar juego")
-        rellenarTexto(".resultado",`Tu amigo secreto será  <b class="amigosecreto">: ${lista[generarNumeroRandom(lista)]}</b>`)    
+        rellenarTexto(".resultado",`Tu amigo secreto será  <b class="amigosecreto">: ${lista[generarNumeroRandom(lista)]}</b>`) 
+        lista=[]   
     }
     else{
         alert("No hay ningun amigo aún.")
